@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anil Kumar — Frontend Developer</title>
+  <meta name="description" content="Anil Kumar — Frontend Developer. HTML, CSS, JavaScript. Portfolio, projects, contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AK</div>
+        <div>
+          <div style="font-weight:800">Anil Kumar</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:4px">Frontend Developer — HTML • CSS • JavaScript</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="ghost" href="#projects">Projects</a>
+        <a class="ghost" href="#skills">Skills</a>
+        <a class="ghost" href="#contact">Contact</a>
+        <button class="btn" id="resumeBtn">Download Resume</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card intro">
+          <h2>Hi — I’m <span class="accent-grad">Anil Kumar</span></h2>
+          <p>I build clean, accessible, and responsive user interfaces using <strong>HTML, CSS, and JavaScript</strong>. I’m learning React and excited to contribute to real-world projects as a frontend intern.</p>
+
+          <div class="ctas">
+            <button class="btn" id="contactBtn">Contact Me</button>
+            <a class="ghost" href="https://anilzy.github.io/portfolio/" target="_blank">View Old Portfolio</a>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+            <div style="flex:1">
+              <div style="font-size:13px;color:var(--muted)">Location</div>
+              <div style="font-weight:700">Odisha, India</div>
+            </div>
+            <div style="flex:1">
+              <div style="font-size:13px;color:var(--muted)">Availability</div>
+              <div style="font-weight:700">Remote internships — Open</div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="card profile-card">
+          <div class="name">Anil Kumar</div>
+          <div class="profile-meta">B.Sc. Student • Self-taught Frontend Dev</div>
+          <div class="skills" aria-hidden>
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">React (learning)</div>
+            <div class="chip">Tailwind (learning)</div>
+          </div>
+
+          <div style="margin-top:14px;display:flex;gap:8px;justify-content:center">
+            <a class="ghost" href="https://www.linkedin.com/in/anilzy" target="_blank">LinkedIn</a>
+            <a class="ghost" href="https://github.com/anilzy" target="_blank">GitHub</a>
+          </div>
+
+          <div style="margin-top:14px;color:var(--muted);font-size:13px">Contact</div>
+          <div style="font-weight:700;margin-top:6px">+91-9124267738</div>
+          <div style="color:var(--muted);font-size:13px">anilkumarusansi99@gmail.com</div>
+        </aside>
+      </section>
+
+      <section id="projects">
+        <div class="section-title">
+          <h3 style="margin:0">Selected Projects</h3>
+          <div style="color:var(--muted);font-size:13px">Click a project to preview</div>
+        </div>
+
+        <div class="grid" style="margin-top:12px">
+          <div class="project" data-url="https://anilzy.github.io/login-registration-page-vanilla-js-/" tabindex="0">
+            <div>
+              <div class="proj-title">Registration &amp; Login</div>
+              <div class="proj-desc">A local-storage based authentication demo with profile view and form validations.</div>
+            </div>
+            <div class="proj-links">
+              <small style="color:var(--muted)">Vanilla JS • DOM • LocalStorage</small>
+              <div style="flex:1"></div>
+              <button class="ghost" onclick="openLink(event,'https://anilzy.github.io/login-registration-page-vanilla-js-/')">Open</button>
+            </div>
+          </div>
+
+          <div class="project" data-url="https://anilzy.github.io/my-weather-app/" tabindex="0">
+            <div>
+              <div class="proj-title">Weather App</div>
+              <div class="proj-desc">Responsive weather dashboard that fetches live weather data from APIs.</div>
+            </div>
+            <div class="proj-links">
+              <small style="color:var(--muted)">API • Fetch • Responsive</small>
+              <div style="flex:1"></div>
+              <button class="ghost" onclick="openLink(event,'https://anilzy.github.io/my-weather-app/')">Open</button>
+            </div>
+          </div>
+
+          <div class="project" data-url="https://anilzy.github.io/clickgame/" tabindex="0">
+            <div>
+              <div class="proj-title">Easy Click Game</div>
+              <div class="proj-desc">An interactive click-based game focused on DOM manipulation and animations.</div>
+            </div>
+            <div class="proj-links">
+              <small style="color:var(--muted)">Game • DOM • Events</small>
+              <div style="flex:1"></div>
+              <button class="ghost" onclick="openLink(event,'https://anilzy.github.io/clickgame/')">Open</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-title">
+          <h3 style="margin:0">Skills & Tools</h3>
+          <div style="color:var(--muted);font-size:13px">What I work with</div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:12px">
+          <div class="chip">HTML5</div>
+          <div class="chip">CSS3</div>
+          <div class="chip">JavaScript (ES6+)</div>
+          <div class="chip">Responsive Design</div>
+          <div class="chip">Git &amp; GitHub</div>
+          <div class="chip">Chrome DevTools</div>
+          <div class="chip">React (learning)</div>
+          <div class="chip">Tailwind CSS (learning)</div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-title">
+          <h3 style="margin:0">Contact</h3>
+          <div style="color:var(--muted);font-size:13px">Let’s build something together</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:14px">
+          <div class="card">
+            <form id="contactForm" onsubmit="sendMail(event)">
+              <div style="display:flex;gap:8px"><input name="name" required placeholder="Your name" style="flex:1;padding:10px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit" /><input name="email" required placeholder="Your email" style="width:220px;padding:10px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit" /></div>
+              <textarea name="message" required placeholder="Short message / role you're offering" style="width:100%;margin-top:10px;padding:12px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit;min-height:120px"></textarea>
+              <div style="margin-top:10px;display:flex;gap:8px;align-items:center">
+                <button class="btn" type="submit">Send Message</button>
+                <div style="color:var(--muted);font-size:13px">Or email: <a href="mailto:anilkumarusansi99@gmail.com">anilkumarusansi99@gmail.com</a></div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="card">
+            <div style="font-weight:700">Availability</div>
+            <div style="color:var(--muted);margin-top:8px">Open to remote internships — paid or unpaid. Looking for frontend roles where I can learn and contribute.</div>
+
+            <div style="margin-top:12px">
+              <div style="font-size:13px;color:var(--muted)">Education</div>
+              <div style="font-weight:700">Seemanta Mahavidyalaya — B.Sc. (expected Jan 2027)</div>
+            </div>
+
+            <div style="margin-top:12px">
+              <div style="font-size:13px;color:var(--muted)">Quick Links</div>
+              <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">
+                <a class="ghost" href="https://anilzy.github.io/portfolio/" target="_blank">Old Portfolio</a>
+                <a class="ghost" href="https://www.linkedin.com/in/anilzy" target="_blank">LinkedIn</a>
+                <a class="ghost" href="https://anilzy.github.io/login-registration-page-vanilla-js-/" target="_blank">Login Project</a>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      Built by Anil Kumar — Available for remote internships • © <span id="year"></span>
+    </footer>
+
+  </div>
+
+  <!-- modal preview -->
+  <div class="modal" id="modal">
+    <div class="panel">
+      <header>
+        <div style="font-weight:700" id="modalTitle">Project Preview</div>
+        <div>
+          <button class="ghost" id="openNew">Open in new tab</button>
+          <button class="ghost" id="closeModal">Close</button>
+        </div>
+      </header>
+      <iframe id="previewFrame" src="about:blank" title="project preview"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js">
+    
+
+  </script>
+</body>
+</html>
