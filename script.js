@@ -30,12 +30,6 @@
 
     function openLink(e,url){ e.stopPropagation(); window.open(url,'_blank') }
 
-    // resume download (links to LinkedIn and prompts to email for resume)
-    document.getElementById('resumeBtn').addEventListener('click', ()=>{
-      // if you have a resume URL, replace the mailto with direct link
-      window.open('mailto:anilkumarusansi99@gmail.com?subject=Resume%20Request&body=Hi%20Anil%2C%0A%0ACould%20you%20please%20share%20your%20resume%3F','_self');
-    });
-
     // contact form -> open mailto (simple, no backend required)
     function sendMail(e){
       e.preventDefault();
